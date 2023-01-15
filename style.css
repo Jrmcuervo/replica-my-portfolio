@@ -48,7 +48,8 @@ body {
   border-bottom-left-radius: 50px 50px;
 }
 
-.header__title {
+.header__title,
+.about__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -56,21 +57,24 @@ body {
   margin-block: 1.5rem;
 }
 
-.header__paragraph {
+.header__paragraph,
+.about__paragraph {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
 }
 
-.header__subtitle {
+.header__subtitle,
+.about__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
 }
 
-.header__icons {
+.header__icons,
+.about__icons {
   display: flex;
   gap: 1.2rem;
   list-style-type: none;
@@ -79,13 +83,14 @@ body {
 
 .projects {
   padding: 7rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   gap: 88px;
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #fff;
   padding: 0.9rem;
   border-radius: 15px 15px;
@@ -157,7 +162,8 @@ body {
   border-radius: 8px;
 }
 
-.project__button {
+.project__button,
+.about__button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -172,4 +178,72 @@ body {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: none;
+}
+
+.project__button:hover,
+.about__button:hover {
+  color: white;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5rem 1.5rem 5rem;
+  background-color: #fff;
+  border-top-right-radius: 50px 50px;
+}
+
+.knowledge {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  padding: 0 1rem;
+}
+
+.knowledge__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 2rem;
+}
+
+.about__info--technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  padding: 0;
+}
+
+.about__info--technologies > li {
+  width: 303px;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+  color: #253858;
+}
+
+.about__image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px 50px;
+  padding-left: 0.5rem;
+}
+
+.about__info--borders {
+  padding-top: 1rem;
 }
