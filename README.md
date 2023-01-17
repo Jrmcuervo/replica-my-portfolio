@@ -119,11 +119,15 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **Ruben**
 
 - GitHub: [@Jrmcuervo](https://github.com/Jrmcuervo)
+
+👤 **Austin**
+
+- GitHub: [@Stino-x](//https://github.com/stino-x)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
