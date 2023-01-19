@@ -11,13 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- Header navigation -->
-    <header>
+    <header class="toolbar">
         <div class="menu__bar">
             <a href="./index.html" class="menu__logo">My logo</a>
             <button class="menu__open">
@@ -42,7 +43,7 @@
     </header>
     <!-- Headline -->
     <section class="header">
-        <h1 class="header__title">I’m Ruben <br> Glad to see <br> you!</h1>
+        <h1 class="header__title">I’m Ruben <br> Glad to see you!</h1>
         <p class="header__paragraph">I’m a software developer! I can help you build a product , feature or website Look
             through some of my work and experience! If you like what you see and have a project you need coded, don’t
             hestiate to contact me.</p>
@@ -76,7 +77,7 @@
                 <li>css</li>
                 <li>javaScript</li>
             </ul>
-            <button class="project__button"><b>See Project</b></button>
+            <button class="project__button">See Project></button>
         </article>
         <!-- Second card -->
         <article class="project">
@@ -97,7 +98,7 @@
                 <li>css</li>
                 <li>javaScript</li>
             </ul>
-            <button class="project__button"><b>See Project</b></button>
+            <button class="project__button">See Project</button>
         </article>
         <!-- Third card -->
         <article class="project">
@@ -118,7 +119,7 @@
                 <li>css</li>
                 <li>javaScript</li>
             </ul>
-            <button class="project__button"><b>See Project</b></button>
+            <button class="project__button">See Project</button>
         </article>
         <!-- Fourth card -->
         <article class="project">
@@ -139,7 +140,7 @@
                 <li>css</li>
                 <li>javaScript</li>
             </ul>
-            <button class="project__button"><b>See Project</b></button>
+            <button class="project__button">See Project</button>
         </article>
     </section>
     <!-- About me -->
@@ -156,28 +157,28 @@
             <li><img src="./icons/twitter.svg" alt="twitter icon"></li>
             <li><img src="./icons/medium.svg" alt="medium icon"></li>
         </ul>
-        <button class="about__button"><b>Get my resume</b></button>
+        <button class="about__button">Get my resume</button>
         <ul class="knowledge">
             <li>
-                <div class="knowledge__title">Languages<span class="material-symbols-outlined">
+                <div class="knowledge__titles">Languages<span class="material-symbols-outlined">
                         expand_more
                     </span>
                 </div>
                 <ul class="about__info--technologies">
-                    <li><img class="about__image" src="./images/img-languages-js.jpg" alt="js icon">JavaScript</li>
-                    <li><img class="about__image" src="./images/img-languages-html.jpg" alt="html icon">HTML</li>
-                    <li><img class="about__image" src="./images/img-languages-css.jpg" alt="css icon">CSS</li>
+                    <li><img class="about__images" src="./images/img-languages-js.jpg" alt="js icon">JavaScript</li>
+                    <li><img class="about__images" src="./images/img-languages-html.jpg" alt="html icon">HTML</li>
+                    <li><img class="about__images" src="./images/img-languages-css.jpg" alt="css icon">CSS</li>
                 </ul>
             </li>
             <li>
-                <div class="knowledge__title">Frameworks<span class="material-symbols-outlined">
+                <div class="knowledge__titles">Frameworks<span class="material-symbols-outlined">
                         chevron_right
                     </span>
                 </div>
             </li>
             <hr>
             <li>
-                <div class="knowledge__title">Skills<span class="material-symbols-outlined">
+                <div class="knowledge__titles">Skills<span class="material-symbols-outlined">
                         chevron_right
                     </span>
                 </div>
@@ -187,32 +188,34 @@
 
     </section>
     <!-- Footer -->
-    <footer class="footer">
-        <h3 class="footer__title">Contact me</h3>
-        <p class="footer__paragraph">If you have an application you are interested in developing, a feature that you
-            need built or a project
-            that needs coding. I’d love to help with it </p>
-        <form class="footer__form" action="https://formspree.io/f/xwkjeknw" method="post">
-            <ul class="footer__ul">
-                <li>
-                    <label for=""></label>
-                    <input class="footer__input" type="text" id="name" name="user_name" placeholder="Your name"
-                        maxlength="30" required />
-                </li>
-                <li>
-                    <label for=""></label>
-                    <input class="footer__input" type="email" id="mail" name="user_email" placeholder="Your email"
-                        required />
-                </li>
-                <li>
-                    <label for=""></label>
-                    <textarea class="footer__input footer__textarea" id="msg" name="user_message"
-                        placeholder="Write your message here" maxlength="500" required></textarea>
-                </li>
-            </ul>
-            <button type="submit" class="footer__button" href=""><b>Get In Touch</b></button>
-        </form>
-    </footer>
+    <div class="footer__background">
+        <footer class="footer">
+            <h3 class="footer__title">Contact me</h3>
+            <p class="footer__paragraph">If you have an application you are interested in developing, a feature that you
+                need built or a project
+                that needs coding. I’d love to help with it </p>
+            <form action="https://formspree.io/f/xwkjeknw" method="post">
+                <ul class="footer__ul">
+                    <li>
+                        <label for=""></label>
+                        <input class="footer__input" type="text" id="name" name="user_name" placeholder="Your name"
+                            maxlength="30" required />
+                    </li>
+                    <li>
+                        <label for=""></label>
+                        <input class="footer__input" type="email" id="mail" name="user_email" placeholder="Your email"
+                            required />
+                    </li>
+                    <li>
+                        <label for=""></label>
+                        <textarea class="footer__input footer__textarea" id="msg" name="user_message"
+                            placeholder="Write your message here" maxlength="500" required></textarea>
+                    </li>
+                </ul>
+                <button class="footer__button" type="submit" href="">Get In Touch</button>
+            </form>
+        </footer>
+    </div>
 </body>
 
 </html>
