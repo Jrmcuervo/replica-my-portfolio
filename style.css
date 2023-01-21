@@ -421,6 +421,15 @@ textarea::placeholder {
     margin-inline: auto;
   }
 
+  .menu__list__li {
+    transition: transform 1s;
+    transform: scale(1);
+  }
+
+  .menu__list__li:hover {
+    transform: scale(1.2);
+  }
+
   .menu__open {
     display: none;
   }
