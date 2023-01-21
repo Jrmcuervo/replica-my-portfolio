@@ -501,6 +501,15 @@ textarea::placeholder {
     align-items: center;
   }
 
+  .about__button {
+    transition: background-color 2s;
+  }
+
+  .about__button:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
   .about__info--technologies {
     display: flex;
     flex-direction: row;
