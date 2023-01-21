@@ -421,6 +421,15 @@ textarea::placeholder {
     margin-inline: auto;
   }
 
+  .menu__list__li {
+    transition: transform 1s;
+    transform: scale(1);
+  }
+
+  .menu__list__li:hover {
+    transform: scale(1.2);
+  }
+
   .menu__open {
     display: none;
   }
@@ -490,6 +499,15 @@ textarea::placeholder {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+  }
+
+  .about__button {
+    transition: background-color 2s;
+  }
+
+  .about__button:hover {
+    background-color: #6070ff;
+    color: #fff;
   }
 
   .about__info--technologies {
