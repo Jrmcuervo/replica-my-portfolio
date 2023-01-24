@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+label {
+  display: none;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -28,7 +32,7 @@ body {
 
 .menu__logo,
 .menu__open {
-  color: #6070ff;
+  color: #5564eb;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1rem;
@@ -198,7 +202,7 @@ body {
   font-weight: 600;
   font-size: 0.8rem;
   line-height: 1rem;
-  color: #7a869a;
+  color: #454b54;
 }
 
 .project__paragraph {
@@ -229,7 +233,7 @@ body {
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #5564eb;
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
@@ -248,7 +252,7 @@ body {
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: #396df2;
-  border: 1px solid #6070ff;
+  border: 1px solid #5564eb;
   border-radius: 8px;
   background: white;
 }
@@ -327,7 +331,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 6rem 1.5rem 3rem;
-  background: #6070ff;
+  background: #5564eb;
   border-top-left-radius: 50px 50px;
   background-image:
     url(background-images/bki7.svg),
@@ -398,14 +402,14 @@ textarea::placeholder {
   margin-top: 1.5rem;
   width: 140px;
   height: 48px;
-  color: #6070ff;
+  color: #5564eb;
 }
 
 .project__button:hover,
 .about__button:hover,
 .footer__button:hover {
   color: white;
-  background: #6070ff;
+  background: #5564eb;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
@@ -436,7 +440,7 @@ textarea::placeholder {
 
   .menu__content {
     display: block;
-    background: #6070ff00;
+    background: #5564eb00;
     backdrop-filter: blur(0);
   }
 
@@ -506,7 +510,7 @@ textarea::placeholder {
   }
 
   .about__button:hover {
-    background-color: #6070ff;
+    background-color: #5564eb;
     color: #fff;
   }
 
@@ -546,7 +550,7 @@ textarea::placeholder {
 @media (max-width: 767px) {
   .menu__content {
     display: none;
-    background: #6070ffb5;
+    background: #5564ebb5;
     backdrop-filter: blur(0.6rem);
     position: absolute;
     top: 0;
