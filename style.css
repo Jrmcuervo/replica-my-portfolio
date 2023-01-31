@@ -37,6 +37,7 @@ body {
   background: none;
   border: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .menu__close {
@@ -221,7 +222,7 @@ body {
   list-style-type: none;
 }
 
-.project__technologies > li {
+.project__technologies>li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -293,7 +294,7 @@ body {
   padding: 0;
 }
 
-.about__info--technologies > li {
+.about__info--technologies>li {
   display: flex;
   align-items: center;
   column-gap: 1rem;
