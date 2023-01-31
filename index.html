@@ -22,23 +22,23 @@
         <div class="toolbar">
             <div class="menu__bar">
                 <a href="./index.html" class="menu__logo">My logo</a>
-                <button class="menu__open">
+                <button class="menu__open" id="btnOpen">
                     <span class="material-symbols-outlined">
                         menu
                     </span>
                 </button>
             </div>
             <!-- Hidden menu -->
-            <nav class="menu__content">
+            <nav class="menu__content" id="btnClose">
                 <button class="menu__close">
                     <span class="material-symbols-outlined">
                         close
                     </span>
                 </button>
                 <ul class="menu__list">
-                    <li class="menu__list__li"><a href="">Portfolio</a></li>
-                    <li class="menu__list__li"><a href="">About</a></li>
-                    <li class="menu__list__li"><a href="">Contact</a></li>
+                    <li class="menu__list__li"><a href="#works">Portfolio</a></li>
+                    <li class="menu__list__li"><a href="#aboutMe">About</a></li>
+                    <li class="menu__list__li"><a href="#contactMe">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,7 +63,7 @@
         </div>
     </section>
     <!-- Projects -->
-    <section class="projects">
+    <section class="projects" id="works">
         <!-- First card -->
         <article class="project">
             <img class="project__img" src="images/img-projects-1.jpg" alt="frontpage first project">
@@ -158,7 +158,7 @@
         </article>
     </section>
     <!-- About me -->
-    <section class="about-content">
+    <section class="about-content" id="aboutMe">
         <div class="about">
             <div>
                 <h3 class="about__title">About <br> Myself</h3>
@@ -207,7 +207,7 @@
         </div>
     </section>
     <!-- Footer -->
-    <div class="footer__background">
+    <div class="footer__background" id="contactMe">
         <footer class="footer">
             <h3 class="footer__title">Contact me</h3>
             <p class="footer__paragraph">If you have an application you are interested in developing, a feature that you
