@@ -37,6 +37,7 @@ body {
   background: none;
   border: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .menu__close {
@@ -46,6 +47,8 @@ body {
   border: none;
   margin-right: 1.5rem;
   margin-top: 0.5rem;
+  padding-top: 1rem;
+  cursor: pointer;
 }
 
 .menu__close span {
@@ -56,7 +59,7 @@ body {
 .menu__list {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   gap: 1rem;
   font-weight: 600;
   font-size: 2rem;
@@ -550,7 +553,7 @@ textarea::placeholder {
 @media (max-width: 767px) {
   .menu__content {
     display: none;
-    background: #5564ebb5;
+    background: #1429e9b6;
     backdrop-filter: blur(0.6rem);
     position: absolute;
     top: 0;
