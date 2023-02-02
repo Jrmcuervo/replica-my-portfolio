@@ -97,6 +97,8 @@ const popupLive = popup.querySelector('#popupLive');
 const popupSource = popup.querySelector('#popupSource');
 
 function displayPopup(project) {
+  const popUpContainer = document.getElementById('popUpContainer');
+  popUpContainer.classList.remove('display-none');
   console.log(project);
   popupTitle.textContent = project.title;
   popupImg.src = project.img;
@@ -119,8 +121,13 @@ function displayPopup(project) {
     li.textContent = project.tech[i];
     popupTechs.appendChild(li);
   }
-
 }
+
+const exitPopUp = document.getElementById('exitPopUp');
+
+exitPopUp.addEventListener('click', () => {
+    popUpContainer.classList.add('display-none');
+})
 
 
 
