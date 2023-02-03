@@ -17,8 +17,9 @@ const projects = [{
   year: '2015',
   desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tech: ['HTML', 'CSS', 'JavaScript'],
-  button: 'See Project',
-  link: '#',
+  button: 'See project',
+  github: '#',
+  live: '#',
 },
 {
   title: 'Spotify',
@@ -28,8 +29,9 @@ const projects = [{
   year: '2016',
   desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur assumenda aperiam perferendis quaerat sunt saepe?',
   tech: ['HTML', 'CSS', 'JavaScript'],
-  button: 'See Project',
-  link: '#',
+  button: 'See project',
+  github: '#',
+  live: '#',
 },
 {
   title: 'Facebook',
@@ -39,8 +41,9 @@ const projects = [{
   year: '2018',
   desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   tech: ['HTML', 'CSS', 'JavaScript'],
-  button: 'See Project',
-  link: '#',
+  button: 'See project',
+  github: '#',
+  live: '#',
 },
 {
   title: '3Dweb',
@@ -50,15 +53,18 @@ const projects = [{
   year: '2018',
   desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur assumenda aperiam perferendis quaerat sunt saepe?',
   tech: ['HTML', 'CSS', 'JavaScript'],
-  button: 'See Project',
-  link: '#',
+  button: 'See project',
+  github: 'https://www.geeksforgeeks.org/how-to-create-an-html-button-that-acts-like-a-link/',
+  live: '#',
 },
 ];
 
 const projectsContainer = document.getElementById('works');
 const popup = document.querySelector('#popup');
 const popupTitle = popup.querySelector('#popupTitle');
-const popupReferences = popup.querySelector('#popupReferences');
+const popupClient = popup.querySelector('#popupClient');
+const popupRole = popup.querySelector('#popupRole');
+const popupYear = popup.querySelector('#popupYear');
 const popupImg = popup.querySelector('#popupImg');
 const popupDesc = popup.querySelector('#popupDesc');
 const popupTechs = popup.querySelector('#popupTechs');
@@ -70,9 +76,9 @@ function displayPopup(project) {
   popUpContainer.classList.remove('display-none');
   popupTitle.textContent = project.title;
   popupImg.src = project.img;
-  popupReferences.textContent = project.client;
-  popupReferences.textContent += project.role;
-  popupReferences.textContent += project.year;
+  popupClient.textContent = project.client;
+  popupRole.textContent = project.role;
+  popupYear.textContent = project.year;
   popupDesc.textContent = project.desc;
   popupTechs.innerHTML = '';
   for (let i = 0; i < project.tech.length; i += 1) {
@@ -81,6 +87,12 @@ function displayPopup(project) {
     li.textContent = project.tech[i];
     popupTechs.appendChild(li);
   }
+  popupLive.addEventListener('click', () => {
+    window.location.href = project.live;
+  });
+  popupSource.addEventListener('click', () => {
+    window.location.href = project.github;
+  });
 
   const exitPopUp = document.getElementById('exitPopUp');
 
