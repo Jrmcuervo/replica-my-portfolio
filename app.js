@@ -130,3 +130,18 @@ for (let i = 0; i < projects.length; i += 1) {
   });
   projectsContainer.appendChild(project);
 }
+
+const form = document.getElementById('contactForm');
+const email = form.elements.user_email;
+const span = document.getElementById('errorMessage');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    span.classList.remove('display-none');
+    setTimeout(() => {
+      span.classList.add('display-none')
+    }, 4000)
+  }
+})
