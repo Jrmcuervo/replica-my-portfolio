@@ -472,6 +472,7 @@ textarea::placeholder {
   display: flex;
   justify-content: center;
   gap: 1rem;
+
   /* padding-top: 3rem; */
 }
 
@@ -644,6 +645,7 @@ textarea::placeholder {
   .popup__buttons {
     padding: 0;
   }
+
   .popupLine {
     border: 1px solid #ebecf0;
     margin: 1rem 0 1rem;
