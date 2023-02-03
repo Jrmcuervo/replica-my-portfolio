@@ -436,6 +436,7 @@ textarea::placeholder {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: scroll;
 }
 
 #popup {
@@ -446,8 +447,11 @@ textarea::placeholder {
 
 #popupReferences {
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
+  align-items: center;
   gap: 0.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 #popupTechs > li {
@@ -563,7 +567,8 @@ textarea::placeholder {
     align-items: center;
   }
 
-  .project:nth-child(even) img {
+  .project:nth-child(even) img,
+  #popup:nth-child(even) img {
     order: 1;
   }
 
@@ -616,6 +621,21 @@ textarea::placeholder {
 
   .footer__button {
     margin-inline: auto;
+  }
+
+  .popupGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 1rem;
+  }
+
+  #popupDesc {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .popup__buttons {
+    padding: 0;
   }
 }
 
