@@ -470,14 +470,14 @@ textarea::placeholder {
 
 .popup__buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 1rem;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
 }
 
 #popupLive,
 #popupSource {
-  padding: 12px;
+  padding: 0.7rem 2rem;
   margin: 1.5rem 0 1rem;
   gap: 10px;
   font-weight: 600;
@@ -488,6 +488,11 @@ textarea::placeholder {
   border: 1px solid #5564eb;
   border-radius: 8px;
   background: white;
+}
+
+.popupLine {
+  border: 1px solid #ebecf0;
+  margin: 2rem 0 1rem;
 }
 
 @media (min-width: 768px) {
@@ -565,6 +570,7 @@ textarea::placeholder {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 15px;
   }
 
   .project:nth-child(even) img,
@@ -572,9 +578,9 @@ textarea::placeholder {
     order: 1;
   }
 
-  .project div {
+  /* .project div {
     padding-left: 7rem;
-  }
+  } */
 
   .about {
     display: grid;
@@ -627,6 +633,7 @@ textarea::placeholder {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin-top: 1rem;
+    gap: 1rem;
   }
 
   #popupDesc {
@@ -636,6 +643,10 @@ textarea::placeholder {
 
   .popup__buttons {
     padding: 0;
+  }
+  .popupLine {
+    border: 1px solid #ebecf0;
+    margin: 1rem 0 1rem;
   }
 }
 
