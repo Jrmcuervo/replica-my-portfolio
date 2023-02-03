@@ -630,6 +630,10 @@ textarea::placeholder {
     margin-inline: auto;
   }
 
+  .bkg__popup {
+    padding: 5rem;
+  }
+
   .popupGrid {
     display: grid;
     grid-template-columns: 2fr 1fr;

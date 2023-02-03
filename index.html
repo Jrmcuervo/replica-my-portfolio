@@ -213,7 +213,7 @@
             <p class="footer__paragraph">If you have an application you are interested in developing, a feature that you
                 need built or a project
                 that needs coding. I’d love to help with it </p>
-            <form class="footer__form" action="https://formspree.io/f/xwkjeknw" method="post">
+            <form class="footer__form" action="https://formspree.io/f/xwkjeknw" method="post" id="contactForm">
                 <ul class="footer__ul">
                     <li>
                         <label for="name">enter your name</label>
@@ -231,6 +231,7 @@
                             placeholder="Write your message here" maxlength="500" required></textarea>
                     </li>
                 </ul>
+                <span id="errorMessage" class="display-none">Please verify the email only contains lowercase characters</span>
                 <button class="footer__button" type="submit" href="">Get In Touch</button>
             </form>
         </footer>
