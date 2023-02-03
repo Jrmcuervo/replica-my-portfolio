@@ -141,7 +141,7 @@ form.addEventListener('submit', (event) => {
   } else {
     span.classList.remove('display-none');
     setTimeout(() => {
-      span.classList.add('display-none')
-    }, 4000)
+      span.classList.add('display-none');
+    }, 4000);
   }
-})
+});
