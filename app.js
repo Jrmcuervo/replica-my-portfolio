@@ -71,7 +71,7 @@ const popupTechs = popup.querySelector('#popupTechs');
 const popupLive = popup.querySelector('#popupLive');
 const popupSource = popup.querySelector('#popupSource');
 
-function displayPopup(project) {
+function displayPopu(project) {
   const popUpContainer = document.getElementById('popUpContainer');
   popUpContainer.classList.remove('display-none');
   popupTitle.textContent = project.title;
@@ -87,7 +87,7 @@ function displayPopup(project) {
     li.textContent = project.tech[i];
     popupTechs.appendChild(li);
   }
-  popupLive.addEventListener('click', () => {
+  popupLive.addEventListener('clic', () => {
     window.location.href = project.live;
   });
   popupSource.addEventListener('click', () => {
@@ -120,7 +120,7 @@ for (let i = 0; i < projects.length; i += 1) {
           <ul class="project__technologies">
             <li>${projects[i].tech[0]}</li>
             <li>${projects[i].tech[1]}</li>
-            <li>${projects[i].tech[2]}</li>
+            <li>${projects[].tech[2]}</li>
           </ul>
           <button class="project__button">${projects[i].button}</button>
         </div>`;
