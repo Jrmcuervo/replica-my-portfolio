@@ -56,6 +56,38 @@ const projects = [{
 ];
 
 const projectsContainer = document.getElementById('works');
+const popup = document.querySelector('#popup');
+const popupTitle = popup.querySelector('#popupTitle');
+const popupReferences = popup.querySelector('#popupReferences');
+const popupImg = popup.querySelector('#popupImg');
+const popupDesc = popup.querySelector('#popupDesc');
+const popupTechs = popup.querySelector('#popupTechs');
+const popupLive = popup.querySelector('#popupLive');
+const popupSource = popup.querySelector('#popupSource');
+
+function displayPopup(project) {
+  const popUpContainer = document.getElementById('popUpContainer');
+  popUpContainer.classList.remove('display-none');
+  popupTitle.textContent = project.title;
+  popupImg.src = project.img;
+  popupReferences.textContent = project.client;
+  popupReferences.textContent += project.role;
+  popupReferences.textContent += project.year;
+  popupDesc.textContent = project.desc;
+  popupTechs.innerHTML = '';
+  for (let i = 0; i < project.tech.length; i += 1) {
+    const li = document.createElement('li');
+    li.className = 'technology';
+    li.textContent = project.tech[i];
+    popupTechs.appendChild(li);
+  }
+
+  const exitPopUp = document.getElementById('exitPopUp');
+
+  exitPopUp.addEventListener('click', () => {
+    popUpContainer.classList.add('display-none');
+  });
+}
 
 for (let i = 0; i < projects.length; i += 1) {
   const project = document.createElement('article');
@@ -86,48 +118,3 @@ for (let i = 0; i < projects.length; i += 1) {
   });
   projectsContainer.appendChild(project);
 }
-
-const popup = document.querySelector('#popup');
-const popupTitle = popup.querySelector('#popupTitle');
-const popupReferences = popup.querySelector('#popupReferences');
-const popupImg = popup.querySelector('#popupImg');
-const popupDesc = popup.querySelector('#popupDesc');
-const popupTechs = popup.querySelector('#popupTechs');
-const popupLive = popup.querySelector('#popupLive');
-const popupSource = popup.querySelector('#popupSource');
-
-function displayPopup(project) {
-  const popUpContainer = document.getElementById('popUpContainer');
-  popUpContainer.classList.remove('display-none');
-  console.log(project);
-  popupTitle.textContent = project.title;
-  popupImg.src = project.img;
-  popupReferences.textContent = project.client;
-  popupReferences.textContent += project.role;
-  popupReferences.textContent += project.year;
-  //   popupReferences.innerHTML = `<p class="project__reference"><span class="project__client">${projects[i].client}</span> <svg width="8" height="8"
-  //   viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-  //   <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
-  // </svg> <span class="project__role">${projects[i].role}</span> <svg width="8" height="8" viewBox="0 0 8 8"
-  //   fill="none" xmlns="http://www.w3.org/2000/svg">
-  //     <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
-  //   </svg> <span class="project__year">${projects[i].year}</span>
-  // </p>`;
-  popupDesc.textContent = project.desc;
-  popupTechs.innerHTML = '';
-  for (let i = 0; i < project.tech.length; i += 1) {
-    const li = document.createElement('li');
-    li.className = 'technology';
-    li.textContent = project.tech[i];
-    popupTechs.appendChild(li);
-  }
-}
-
-const exitPopUp = document.getElementById('exitPopUp');
-
-exitPopUp.addEventListener('click', () => {
-    popUpContainer.classList.add('display-none');
-})
-
-
-
