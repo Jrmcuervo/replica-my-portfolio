@@ -3,7 +3,7 @@ const nameData = document.getElementById('name');
 const emailData = document.getElementById('mail');
 const messageData = document.getElementById('msg');
 
-function saveToLocal (storeData) {
+function saveToLocal(storeData) {
   localStorage.setItem('info', JSON.stringify(storeData));
 }
 
