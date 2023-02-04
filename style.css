@@ -626,6 +626,11 @@ textarea::placeholder {
     background-size: auto, 8%, 8%, auto, auto;
   }
 
+  #errorMessage {
+    color: red;
+    text-decoration: underline;
+  }
+
   .footer__button {
     margin-inline: auto;
   }
